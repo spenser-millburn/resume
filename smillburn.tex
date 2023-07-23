@@ -1,0 +1,278 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.6.5, 3 Nov 2022) written by LianTze Lim (liantze@gmail.com), based on the
+% CV created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{Paper}{HTML}{FFFFFF}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .cfg if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear.cfg}
+
+%% Use (and optionally edit if necessary) this .cfg if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num.cfg}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Spenser Millburn}
+\tagline{Embedded Software Engineer / Roboticist}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+\photoR{2.5cm}{headshot}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \homepage{spenser.engineer}
+  \email{aereadnos@live.com}
+  \phone{505-604-5705}
+  \location{Boston, MA}
+  \linkedin{Spenser Millburn}
+  \github{github.com/spenser-millburn} % I'm just making this up though.
+%   \orcid{0000-0000-0000-0000} % Obviously making this up too.
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+	%%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+Dedicated, enthusiastic and ambitious professional with excellent comprehension and retention ability. Breadth and depth knowledge in a broad spectrum of technical fields concentrated within Robotics, EE, CS and Mechanical Design.
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.64}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Embedded Software Engineer}{Alert Innovation > Walmart Global Tech}{September 2022 -- Current}{Boston, MA}
+
+\begin{itemize}
+
+\item Designed, implemented, and unit tested performant hierarchical state machines with modern C++17 in a real time QNX microkernel environment. 
+\item Developed device drivers for critical I2C and SPI based sensors, enabling accurate localization of autonomous robots in production (50k units, 99.7\% uptime).                                                        
+\item Spearheaded a company-wide transition towards Azure IoT based configuration management. Owned SDK integration to codebase development for embedded (C++), backend (Python), and frontend (React)                                              
+\item Collaborated cross-functionally to establish data pipelines between IoT Hub and robot software, enabling efficient data exchange and real-time cloud analytics.                       
+\item Dockerized the embedded development environment, resulting in streamlined workflows, centralized tooling, and accelerated development cycles.
+\end{itemize}
+\divider
+\cvevent{Robotics Engineer}{Building Machines}{March 2022 -- September 2022}{Boston, MA}
+\begin{itemize}
+\item Full ownership and system design of a high powered (480V 50Hp) robotic fluid delivery module for additive manufacturing.
+\item Designed implemented, tested and integrated a full stack React GUI to override physical control panel.
+\item WebSocket interface and Flask python backend.  
+Systemd linux service management.
+\item IOT integration  of multiple I2C and SPI sensors/actuators with custom PCBs and C++ device drivers. Modalities: Laser Time-Of-Flight, Depth CV, Pressure Transducers, Solenoid Valves,  BLDC motor, relays 
+\item Data acquisition,analysis and visualization with JupyterLab and Python.
+\item Electromechanical design, build, test of fixtures
+\end{itemize}
+\divider
+
+\cvevent{Engineering Technician > Test Engineer}{Owl Labs Inc}{March 2021-- May 2022}{Boston, MA}
+\begin{itemize}
+\item Rapid prototyping, prototype assembly and design. Supported 30+ FTEs.
+\item Professional fixture design, fabrication, testing and deployment. Oversaw CM production line integration. 
+\item Thermal data acquisition and Test Engineering.
+\item Customer facing Embedded Linux software development support.
+\item Data acquisition, analysis and visualization not limited to thermals, acoustics and airflow.
+\end{itemize}
+
+\divider
+\cvevent{Robotic Assembly Technician}{Sartorius Stedim Biotechnology}{August 2018 -- March 2021}{Albuquerque, NM}
+\break
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
+%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
+%% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
+%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+
+% Switch to the right column. This will now automatically move to the second
+% page if the content is too long.
+\switchcolumn
+
+\cvsection{Education}
+
+\cvevent{B.S.\ in Mechatronics Engineering}{Northeastern University}{Sept 2020-23 $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \  \ \ \ \  \ \ \ \ \ \ \ \ \ \textbf{3.9}$}{}
+
+
+\cvsection{Computer Science}
+\smallbreak
+\cvtag{Control Systems}
+\cvtag{Simulation}
+\cvtag{opencv}
+\cvtag{SLAM}
+\cvtag{Kinematics}\smallbreak\divider\smallbreak
+\cvtag{C++ 21}
+\cvtag{C}
+\cvtag{Rust}
+\cvtag{OOP}
+\cvtag{CMake}
+\cvtag{Eigen+LA}
+\cvtag{Python}
+\cvtag{Numpy}
+\cvtag{Pandas}\smallbreak\divider\smallbreak
+\cvtag{Linux + Kernel}
+\cvtag{Docker}
+\cvtag{Kubernetes}
+\cvtag{Azure}
+\cvtag{AWS}
+\cvtag{Terraform}\smallbreak\divider\smallbreak
+\cvtag{TS}
+\cvtag{React.js}
+\cvtag{Node.js}
+\cvtag{MongoDB}
+\cvtag{FireBase}
+\cvtag{SQL}
+\cvtag{Flask}
+\cvtag{bash}
+
+\cvsection{Electrical}
+\cvtag{Advanced SMT Soldering}
+\cvtag{Altium Designer}
+\cvtag{I2C}
+\cvtag{SPI}
+\cvtag{CAN}
+\cvtag{Arduino/RPi}
+\cvtag{FPGA}          
+\cvtag{Oscilloscope}
+\cvtag{Logic Analyzer} 
+\cvtag{Bed of Nails}
+
+\cvsection{Mechanical}
+\cvtag{OnShape}                                                                            
+\cvtag{Creo}                                                                               
+\cvtag{Solidworks}                                                                         
+\cvtag{AutoCAD}                                                                            
+\cvtag{CNC/CAM Machining (Mill/Lathe)}                                                     
+\cvtag{DFM}                                                                                
+\cvtag{Fluidics/Microfluidics}                                                             
+\cvtag{Thermal Analysis}   
+
+\cvsection{Projects}
+
+% \divider
+
+\cvachievement{\faPaw}{Husky Quadruped}{Northeastern Robotics, PM \& Software Lead}
+\begin{itemize}
+\item{Project Management of 75+ student engineering organization, development of advanced quadruped research platform.}                                                                                 
+\item{Significant technical contributions to CAPSTAN servo mechanisms, ROS infrastructure, SLAM, Computer Vision, Inverse kinematics.}  
+\end{itemize}
+
+% \newpage
+
+% \cvsection{Referees}
+
+% % \cvref{name}{email}{mailing address}
+% \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+% {Address Line 1\\Address line 2}
+
+% \divider
+
+% \cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
+% {Address Line 1\\Address line 2}
+
+\end{paracol}
+
+\end{document}
