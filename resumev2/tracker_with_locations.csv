@@ -1,0 +1,128 @@
+Company,Category,Applied,Date Applied,Response,Priority,Location,Has Massachusetts Office
+FANUC,Industrial Robot Manufacturers,false,,,Rochester Hills, Michigan, USA,No
+KUKA,Industrial Robot Manufacturers,false,,,Augsburg, Bavaria, Germany,No
+ABB,Industrial Robot Manufacturers,false,,,Zurich, Switzerland,No
+YASKAWA,Industrial Robot Manufacturers,false,,,Waukegan, Illinois, USA,No
+Universal Robots,Industrial Robot Manufacturers,false,,,Odense, Denmark,Yes
+Kawasaki Robotics,Industrial Robot Manufacturers,false,,,Wixom, Michigan, USA,No
+Robust.AI,Warehouse Logistics,false,,,San Carlos, California, USA,No
+Nimble,Warehouse Logistics,false,,,San Francisco, California, USA,No
+Amazon Robotics,Warehouse Logistics,false,,,North Reading, Massachusetts, USA,Yes
+MITRA,Warehouse Logistics,false,,,San Francisco, California, USA,No
+Boston Dynamics,Warehouse Logistics,false,,,Waltham, Massachusetts, USA,Yes
+GreyOrange,Warehouse Logistics,false,,,Roswell, Georgia, USA,No
+Zebra,Warehouse Logistics,false,,,Lincolnshire, Illinois, USA,No
+Ambi,Warehouse Logistics,false,,,Berkeley, California, USA,No
+RightHand,Warehouse Logistics,false,,,Charlestown, Massachusetts, USA,Yes
+Berkshire Grey,Warehouse Logistics,false,,,Bedford, Massachusetts, USA,Yes
+Fox Robotics,Warehouse Logistics,false,,,Austin, Texas, USA,No
+Strobe,Warehouse Logistics,false,,,San Francisco, California, USA,No
+Geek+,Warehouse Logistics,false,,,Beijing, China,No
+Vecna,Warehouse Logistics,false,,,Waltham, Massachusetts, USA,Yes
+Rapid Robotics,Warehouse Logistics,false,,,San Francisco, California, USA,No
+Locus,Warehouse Logistics,false,,,Wilmington, Massachusetts, USA,Yes
+Fabric,Warehouse Logistics,false,,,Tel Aviv, Israel,No
+Plus One,Warehouse Logistics,false,,,San Antonio, Texas, USA,No
+Dexory,Warehouse Logistics,false,,,London, United Kingdom,No
+BrainCorp,Warehouse Logistics,false,,,San Diego, California, USA,No
+Covariant,Warehouse Logistics,false,,,Emeryville, California, USA,No
+Pickle Robot,Warehouse Logistics,false,,,Cambridge, Massachusetts, USA,Yes
+Standard Bots,Warehouse Logistics,false,,,Brooklyn, New York, USA,No
+Otto Motors,Warehouse Logistics,false,,,Kitchener, Ontario, Canada,No
+Syrius,Warehouse Logistics,false,,,Shenzhen, China,No
+Tesla,Humanoid Systems,false,,,Austin, Texas, USA,No
+Figure,Humanoid Systems,false,,,Sunnyvale, California, USA,No
+Boston Dynamics,Humanoid Systems,false,,,Waltham, Massachusetts, USA,Yes
+Fourier,Humanoid Systems,false,,,Shanghai, China,No
+Apptronik,Humanoid Systems,false,,,Austin, Texas, USA,No
+Agility Robotics,Humanoid Systems,false,,,Salem, Oregon, USA,No
+PAL Robotics,Humanoid Systems,false,,,Barcelona, Spain,No
+Skild.AI,Humanoid Systems,false,,,Mountain View, California, USA,No
+Engineered Arts,Humanoid Systems,false,,,Falmouth, Cornwall, UK,No
+Sanctuary,Humanoid Systems,false,,,Vancouver, Canada,No
+DeepRobotics,Humanoid Systems,false,,,Hangzhou, China,No
+Enchanted Tools,Humanoid Systems,false,,,Paris, France,No
+Kepler,Humanoid Systems,false,,,Munich, Germany,No
+Unitree,Humanoid Systems,false,,,Hangzhou, China,No
+Softbank Robotics,Humanoid Systems,false,,,Tokyo, Japan,Yes
+Robotis,Humanoid Systems,false,,,Seoul, South Korea,No
+Reflex,Humanoid Systems,false,,,San Francisco, California, USA,No
+Kyber,Humanoid Systems,false,,,San Francisco, California, USA,No
+Mentee Robotics,Humanoid Systems,false,,,Tel Aviv, Israel,No
+Cobot,Humanoid Systems,false,,,San Francisco, California, USA,No
+Gecko Robotics,Construction & Inspection,false,,,Pittsburgh, Pennsylvania, USA,No
+Urban Machine,Construction & Inspection,false,,,Oakland, California, USA,No
+MX Robotics,Construction & Inspection,false,,,San Francisco, California, USA,No
+Pronto,Construction & Inspection,false,,,San Francisco, California, USA,No
+Energy Robotics,Construction & Inspection,false,,,Darmstadt, Germany,No
+Canvas,Construction & Inspection,false,,,San Francisco, California, USA,No
+Built Robotics,Construction & Inspection,false,,,San Francisco, California, USA,No
+Arix,Construction & Inspection,false,,,San Francisco, California, USA,No
+Dusty Robotics,Construction & Inspection,false,,,Mountain View, California, USA,No
+Ghost,Construction & Inspection,false,,,Philadelphia, Pennsylvania, USA,No
+Cobalt,Construction & Inspection,false,,,San Mateo, California, USA,No
+Toggle Robotics,Construction & Inspection,false,,,New York, New York, USA,No
+Charge,Construction & Inspection,false,,,San Francisco, California, USA,No
+Rugged,Construction & Inspection,false,,,Houston, Texas, USA,No
+Cosmic,Construction & Inspection,false,,,San Francisco, California, USA,No
+Kaise,Construction & Inspection,false,,,Tokyo, Japan,No
+Monarch,Agriculture,false,,,Livermore, California, USA,No
+Carbon Robotics,Agriculture,false,,,Seattle, Washington, USA,No
+Abundant Robotics,Agriculture,false,,,Hayward, California, USA,No
+John Deere,Agriculture,false,,,Moline, Illinois, USA,Yes
+Plenty,Agriculture,false,,,South San Francisco, California, USA,No
+AppHarvest,Agriculture,false,,,Morehead, Kentucky, USA,No
+Aigen,Agriculture,false,,,Seattle, Washington, USA,No
+Stoutomy,Agriculture,false,,,San Francisco, California, USA,No
+Agrobot,Agriculture,false,,,Huelva, Spain,No
+Scythe,Agriculture,false,,,Longmont, Colorado, USA,No
+Nexus,Agriculture,false,,,Halifax, Nova Scotia, Canada,No
+Blue River,Agriculture,false,,,Sunnyvale, California, USA,No
+Electric Sheep,Agriculture,false,,,San Francisco, California, USA,No
+Yard,Agriculture,false,,,San Francisco, California, USA,No
+Farm-ng,Agriculture,false,,,Watsonville, California, USA,No
+Verdant,Agriculture,false,,,Hayward, California, USA,No
+Cuby,Manufacturing,false,,,Tokyo, Japan,No
+Path Robotics,Manufacturing,false,,,Columbus, Ohio, USA,No
+UnitX,Manufacturing,false,,,San Francisco, California, USA,No
+FormulaMod,Manufacturing,false,,,San Francisco, California, USA,No
+Bright Machines,Manufacturing,false,,,San Francisco, California, USA,No
+Vention,Manufacturing,false,,,Montreal, Quebec, Canada,No
+Machina Labs,Manufacturing,false,,,Los Angeles, California, USA,No
+Starship,Ground-Based Delivery,false,,,San Francisco, California, USA,No
+Cartken,Ground-Based Delivery,false,,,Oakland, California, USA,No
+Bear Robotics,Ground-Based Delivery,false,,,Redwood City, California, USA,No
+Kiwibot,Ground-Based Delivery,false,,,Berkeley, California, USA,No
+Coco,Ground-Based Delivery,false,,,Los Angeles, California, USA,No
+Serve Robotics,Ground-Based Delivery,false,,,Redwood City, California, USA,No
+Navia,Ground-Based Delivery,false,,,Paris, France,No
+Ottonomy,Ground-Based Delivery,false,,,New York, New York, USA,No
+DroneUp,Aerial Delivery,false,,,Virginia Beach, Virginia, USA,No
+Zipline,Aerial Delivery,false,,,South San Francisco, California, USA,No
+Wing,Aerial Delivery,false,,,Palo Alto, California, USA,No
+Matternet,Aerial Delivery,false,,,Mountain View, California, USA,No
+FlyTrex,Aerial Delivery,false,,,Tel Aviv, Israel,No
+Wingcopter,Aerial Delivery,false,,,Weiterstadt, Germany,No
+Manna,Aerial Delivery,false,,,Dublin, Ireland,No
+Intuitive,Surgical,false,,,Sunnyvale, California, USA,No
+Stryker,Surgical,false,,,Kalamazoo, Michigan, USA,No
+Verb Medical,Surgical,false,,,Mountain View, California, USA,No
+Johnson & Johnson,Surgical,false,,,New Brunswick, New Jersey, USA,Yes
+Medtronic,Surgical,false,,,Dublin, Ireland,Yes
+Moon Surgical,Surgical,false,,,Paris, France,No
+Procept,Surgical,false,,,Redwood City, California, USA,No
+Vicarious,Surgical,false,,,Waltham, Massachusetts, USA,Yes
+Chef,Food Automation,false,,,San Francisco, California, USA,No
+Hyphen,Food Automation,false,,,San Jose, California, USA,No
+Miso,Food Automation,false,,,Pasadena, California, USA,No
+Matic,Food Automation,false,,,San Francisco, California, USA,No
+iRobot,Food Automation,false,,,Bedford, Massachusetts, USA,Yes
+Nala,Food Automation,false,,,Naperville, Illinois, USA,No
+Shinkei,Food Automation,false,,,San Francisco, California, USA,No
+Dyson,Home Automation & Cleaning,false,,,Malmesbury, United Kingdom,Yes
+Shark Ninja,Home Automation & Cleaning,false,,,Needham, Massachusetts, USA,Yes
+AMP,Recycling,false,,,Louisville, Colorado, USA,No
+CleanRobotics,Recycling,false,,,Pittsburgh, Pennsylvania, USA,No
+ZenRobotics,Recycling,false,,,Helsinki, Finland,No
+Glacier,Recycling,false,,,San Francisco, California, USA,No
+Waste Robotics,Recycling,false,,,Trois-Rivières, Quebec, Canada,No

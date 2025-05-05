@@ -1,0 +1,137 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{fontawesome5}
+
+% Page geometry
+\geometry{margin=0.25in, top=0.25in, bottom=0.25in}
+\linespread{1.05}
+
+% Colors
+\definecolor{sectioncolor}{RGB}{0,0,0}
+
+% Format section headers
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% Format subsection headers
+\titleformat{\subsection}
+  {\bfseries}
+  {}
+  {0em}
+  {}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Bullet styling
+\setlist[itemize]{leftmargin=*, topsep=0pt, itemsep=0pt, parsep=0pt}
+
+% Header style
+\newcommand{\header}[2]{
+  \begin{center}
+    \huge \textbf{#1}\\
+    \large #2
+  \end{center}
+}
+
+% Qualification areas
+\newcommand{\qualificationarea}[2]{
+  \textbf{#1}: #2
+}
+
+% Job entry - Modified to have space before rather than after
+\newcommand{\jobentry}[2]{
+  \vspace{0.5\baselineskip}\textbf{#1} -- #2 
+}
+
+% Begin document
+\begin{document}
+
+\begin{center}
+  \small \faEnvelope\ aereadnos@live.com \hspace{1em} \faPhone\ 505-604-5705 \hspace{1em} \faGlobe\ spenser.engineer
+\end{center}
+
+\header{Spenser Millburn -- Resume}{Full Stack Software Engineer}
+
+\section*{Professional Summary}
+Full Stack Engineer with expertise in both frontend and backend development, microservices architecture, and cloud deployment. Proven ability to architect and implement end-to-end solutions that deliver exceptional user experiences while meeting complex technical requirements. Excels in cross-functional team environments.
+
+\section*{Technical Skills}
+\qualificationarea{Frontend}{TypeScript, React, WebSockets, HTML/CSS, UI/UX Design, Web Application Architecture}
+
+\qualificationarea{Backend}{Python, Go, Flask, C++, Node.js, RESTful APIs, Microservices, Linux Systems, Bash}
+
+\qualificationarea{DevOps/Cloud}{Docker, Azure, ETL Data Pipelines, CI/CD, Systemd, Cloud Deployment}
+
+\qualificationarea{Database}{SQL, NoSQL, Data Acquisition \& Analysis}
+
+\section*{Education}
+\textbf{Northeastern University:} Mechatronics Engineering, B.S.\\
+Class of 2025, GPA 3.7
+
+\section*{Professional Experience}
+\jobentry{(September 2022 -- Current)}{Senior Software Engineer - \textit{Walmart Advanced Systems \& Robotics} $\rightarrow$ \textit{Symbotic}}
+\begin{itemize}
+\item Designed and implemented ETL data pipelines that processed mission-critical telemetry data, deployed to Azure cloud environment.
+\item Containerized development toolchain with Docker, improving build consistency and deployment reliability.
+\item Developed hierarchical state machines using event-driven architecture for orchestration of complex systems.
+\item Created high-performance, real-time data collection and analytics infrastructure to improve observability stack.
+\item Mentored junior engineers and interns on software best practices and new technologies.
+\end{itemize}
+
+\jobentry{(March 2022 -- September 2022)}{Full Stack Engineer -- \textit{Building Machines Incorporated}}
+\begin{itemize}
+\item Designed, implemented and tested full stack application with React frontend and Flask Python backend.
+\item Built responsive UI that replaced physical control panel, enabling remote monitoring and control of industrial systems.
+\item Developed WebSocket interface for real-time communication between frontend and backend components.
+\item Created and deployed Linux services using Systemd for reliable application management.
+\item Implemented data acquisition, analysis and visualization tools with JupyterLab and Python.
+\end{itemize}
+
+\jobentry{(March 2021 -- March 2022)}{Software Development Engineer -- \textit{Owl Labs}}
+\begin{itemize}
+\item Led customer-facing Embedded Linux and Android software development initiatives.
+\item Developed data acquisition and visualization tools for analyzing thermal, acoustic, and airflow systems.
+\item Created dashboards and analytics tools using Python, NumPy, and Matplotlib.
+\item Supported 30+ engineers with software tools to improve development workflows.
+\item Worked cross-functionally with hardware, testing, and product teams to ship consumer products.
+\end{itemize}
+
+\jobentry{(August 2020 -- March 2021)}{Software Engineer -- \textit{Degree Controls Systems}}
+\begin{itemize}
+\item Designed and implemented customer-facing application with Python and PyQT5 GUI framework.
+\item Created intuitive user interfaces for complex engineering systems.
+\item Developed software for hardware testing and validation processes.
+\item Managed engineering change order documentation and implementation.
+\item Collaborated with cross-functional teams to deliver integrated hardware-software solutions.
+\end{itemize}
+
+\jobentry{(August 2018 -- August 2020)}{Software Developer -- \textit{Sartorius NA}}
+\begin{itemize}
+\item Architected and built custom IoT automation server framework in Python, generating over \$50,000 in recovered value.
+\item Developed web-based GUI for dynamic project management and reporting.
+\item Created microcontroller clients reporting live production data via socket server architecture.
+\item Automated paperwork systems, targeting KPI calculations and metrics.
+\item Implemented automated label printing and generation system.
+\end{itemize}
+
+\section*{Leadership \& Team Experience}
+\begin{itemize}
+\item \textbf{Project Manager \& Software Lead} for NEU Robotics Quadruped Project, coordinating 75+ engineering students.
+\item Led cross-functional software team developing architecture for complex robotic platform.
+\item Managed and coordinated 10+ subteams across various technical domains.
+\item Developed and documented software architecture standards and workflows.
+\item Implemented agile methodologies to improve team productivity and project outcomes.
+\end{itemize}
+
+\end{document}

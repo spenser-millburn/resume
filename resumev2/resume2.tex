@@ -1,0 +1,148 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{fontawesome5}
+
+% Page geometry
+\geometry{margin=0.75in, top=0.5in, bottom=0.5in}
+
+% Colors
+\definecolor{sectioncolor}{RGB}{0,0,0}
+
+% Format section headers
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% Format subsection headers
+\titleformat{\subsection}
+  {\bfseries}
+  {}
+  {0em}
+  {}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Bullet styling
+\setlist[itemize]{leftmargin=*, topsep=0pt, itemsep=0pt, parsep=0pt}
+
+% Header style
+\newcommand{\header}[2]{
+  \begin{center}
+    \Huge \textbf{#1}\\
+    \large #2
+  \end{center}
+}
+
+% Qualification areas
+\newcommand{\qualificationarea}[2]{
+  \textbf{#1}: #2\\
+}
+
+% Job entry
+\newcommand{\jobentry}[2]{
+  \textbf{#1} -- #2\\
+}
+
+% Define divider command for compatibility with your new content
+\newcommand{\divider}{\vspace{6pt}}
+
+% Define cvevent command for compatibility with your new content
+\newcommand{\cvevent}[4]{
+  \textbf{#1} -- #2\\
+  \textit{#3} -- #4\\
+}
+
+% Begin document
+\begin{document}
+
+\header{Spenser Millburn -- Resume/Portfolio}{Robotics Software Engineer / Technologist}
+
+\section*{Qualifications}
+Dedicated, enthusiastic and ambitious professional with excellent comprehension and retention ability. Breadth and depth knowledge in a broad spectrum of technical fields concentrated within Mechatronics/Robotics, EE, Computer Science and Mechanical Design.
+
+\qualificationarea{CS}{C++, Python, Linux, JavaScript, React.js, Bash, \textit{ROS(1,2), OpenCV, Matplotlib, NumPy, QT (GUI), Jupyter}, Control Systems, \textit{Forward/Inverse Kinematics, Gazebo Simulation}, TCP/UDP, Websockets}
+
+\qualificationarea{EE}{Advanced SMT Soldering, \textit{Altium Designer}, I2C, SPI, CAN, Arduino/Raspberry Pi, FPGA, Oscilloscope, Logic Analyzer, Bed of Nails, Sensors \& Actuators}
+
+\qualificationarea{ME}{OnShape, Creo, Solidworks, AutoCAD, Additive MFG, CNC/CAM Machining (Mill/Lathe), DFM, Fluidics/Microfluidics, Thermal Analysis}
+
+\section*{Education}
+\textbf{Northeastern University:} Mechatronics Engineering, B.S.\\
+Class of 2022, GPA 4.0
+
+\textbf{Central New Mexico Community College:} Engineering, Associate of Science\\
+Class of 2020, GPA: 4.0
+
+\section*{Leadership -- NEU Robotics, Quadruped Robotics Project Manager \& Software Lead}
+\begin{itemize}
+\item Active leadership of multidisciplinary team of 75+ engineering students working to develop advanced quadruped (Robot Dog) research platform.
+\item Highly involved with the architectural design of the system, established a cross functional software team and spearheaded 10+ subteams.
+\item Substantial technical contribution to the development of CAPSTAN servo reduction mechanisms, ROS (Robot Operating System), Simultaneous Localization and Mapping, Computer Vision, Inverse kinematics and more.
+\end{itemize}
+
+\section*{Practical Experience}
+
+\cvevent{Embedded Software Engineer}{Alert Innovation > Walmart Global Tech}{September 2022 -- Current}{Boston, MA}
+\begin{itemize}
+\item Designed, implemented, and unit tested performant hierarchical state machines with modern C++17 in a real time QNX microkernel environment. 
+\item Developed device drivers for critical I2C and SPI based sensors, enabling accurate localization of autonomous robots in production (50k units, 99.7\% uptime).                                                        
+\item Spearheaded a company-wide transition towards Azure IoT based configuration management. Owned SDK integration to codebase development for embedded (C++), backend (Python), and frontend (React)                                              
+\item Collaborated cross-functionally to establish data pipelines between IoT Hub and robot software, enabling efficient data exchange and real-time cloud analytics.                       
+\item Dockerized the embedded development environment, resulting in streamlined workflows, centralized tooling, and accelerated development cycles.
+\end{itemize}
+\divider
+
+\jobentry{(March 2022- Current)}{Robotics Engineer -- Building Machines Incorporated}
+\begin{itemize}
+\item Full ownership and architecture of a high powered (480V 50Hp) robotic fluid delivery system for additive manufacturing.
+\item Designed implemented tested and integrated a full stack React GUI to override physical control panel.
+\item WebSocket interface and Flask python backend. Systemd linux service management.
+\item IOT integration of multiple I2C and SPI sensors/Actuators with custom PCBs and C++ drivers.
+\item Modalities: Laser Time-Of-Flight, Depth CV, Pressure Transducers, Solenoid Valves, BLDC motor, Relays
+\item Data acquisition, analysis and visualization with JupyterLab and Python.
+\item Electromechanical design, build, test of fixtures
+\end{itemize}
+
+\jobentry{(March 2021- March 2022)}{Engineering Technician -- Owl Labs}
+\begin{itemize}
+\item Rapid prototyping, prototype assembly and design. Supported 30+ FTEs.
+\item Professional fixture design, fabrication, testing and deployment. Contract manufacturing production line integration (10000+ units annual throughput)
+\item Thermal data acquisition and Test Engineering.
+\item Customer facing Embedded Linux and Android software development support.
+\item Data acquisition, analysis and visualization not limited to thermals, acoustics and airflow.
+\end{itemize}
+
+\jobentry{(August 2020- March 2021)}{Engineering Technician -- Degree Controls Systems}
+\begin{itemize}
+\item Provide SMT rework and circuit analysis support.
+\item Project management of Engineering Change Order and Prototype Change Order documentation.
+\item Design PCBAs and electro-mechanical assemblies.
+\item Invented customer facing pythonic software, GUI design with PyQT5.
+\item Provide mechanical engineering CAD support of fixtures and jigs
+\end{itemize}
+
+\jobentry{(August 2018 -- August 2020)}{Operations Technician (Engineering Focused) -- Sartorius NA}
+\begin{itemize}
+\item Design, fabricate and document professional production jigs, ultimately generating a return greater than USD \$50,000 in automated labor and recovered inventory.
+\item Designed, prototyped and established custom IOT automation server framework, developed exclusively in python3
+  \begin{itemize}
+  \item Automates paperwork system, specifically targeting key KPI and Metric calculations.
+  \item Utilizes custom microcontroller clients to report live production data via a socket server.
+  \item Automates label printing and generation.
+  \item Provides a dynamic project management platform, in order to achieve better insight and communication to managers via the server's web based GUI
+  \end{itemize}
+\item Successfully modeled and presented a restructured production floorplan to executive level administration
+\item One of three technicians to Manufacture, troubleshoot and certify highly accomplished equipment (specifically flow cytometry) (Unit price: \$330k USD)
+\end{itemize}
+
+\end{document}

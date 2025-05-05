@@ -1,0 +1,137 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{fontawesome5}
+
+% Page geometry
+\geometry{margin=0.25in, top=0.25in, bottom=0.25in}
+\linespread{1.05}
+
+% Colors
+\definecolor{sectioncolor}{RGB}{0,0,0}
+
+% Format section headers
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% Format subsection headers
+\titleformat{\subsection}
+  {\bfseries}
+  {}
+  {0em}
+  {}
+\titlespacing*{\subsection}{0pt}{8pt}{2pt}
+
+% Bullet styling
+\setlist[itemize]{leftmargin=*, topsep=0pt, itemsep=0pt, parsep=0pt}
+
+% Header style
+\newcommand{\header}[2]{
+  \begin{center}
+    \huge \textbf{#1}\\
+    \large #2
+  \end{center}
+}
+
+% Qualification areas
+\newcommand{\qualificationarea}[2]{
+  \textbf{#1}: #2
+}
+
+% Job entry - Modified to have space before rather than after
+\newcommand{\jobentry}[2]{
+  \vspace{0.5\baselineskip}\textbf{#1} -- #2 
+}
+
+% Begin document
+\begin{document}
+
+\begin{center}
+  \small \faEnvelope\ aereadnos@live.com \hspace{1em} \faPhone\ 505-604-5705 \hspace{1em} \faGlobe\ spenser.engineer
+\end{center}
+
+\header{Spenser Millburn -- Resume}{AI \& ML Engineer}
+
+\section*{Professional Summary}
+AI Engineer with expertise in large language models, retrieval-augmented generation (RAG), and intelligent systems integration. Combines strong software engineering fundamentals with practical ML implementation experience. Proven track record of developing AI solutions that enhance operational capabilities and solve real-world problems through innovative approaches.
+
+\section*{Technical Skills}
+\qualificationarea{AI/ML}{Large Language Models, RAG Systems, MCP-based Adapters, Natural Language Processing, ML Ops, Neural Networks}
+
+\qualificationarea{Programming}{Python, C++, TypeScript, Go, Linux, Bash}
+
+\qualificationarea{Data Engineering}{ETL Pipelines, Data Acquisition \& Analysis, Azure, NumPy, SQL/NoSQL}
+
+\qualificationarea{Systems}{Robotics AI Integration, Distributed Systems, Microservices, Event-driven Architecture}
+
+\section*{Education}
+\textbf{Northeastern University:} Mechatronics Engineering, B.S.\\
+Class of 2025, GPA 3.7
+
+\section*{Professional Experience}
+\jobentry{(September 2022 -- Current)}{AI Engineer - \textit{Walmart Advanced Systems \& Robotics} $\rightarrow$ \textit{Symbotic}}
+\begin{itemize}
+\item Developed an LLM-based chatbot using Retrieval-Augmented Generation (RAG) to interface with the company's Confluence documentation base, improving engineer productivity and information access.
+\item Prototyped an MCP (Model-Configured Processor) based adapter for robotic control systems, creating a unified AI-driven interface to legacy systems.
+\item Wrapped existing APIs in MCP-based adapter architecture to enable natural language control of robotic systems.
+\item Designed and implemented ETL data pipelines in Azure for processing telemetry data from production robots, enabling machine learning insights.
+\item Led cross-functional AI integration initiatives to optimize robotic performance through predictive analytics and real-time decision making.
+\item Containerized AI development environments with Docker, improving model development and deployment consistency across the team.
+\end{itemize}
+
+\jobentry{(March 2022 -- September 2022)}{ML Systems Engineer -- \textit{Building Machines Incorporated}}
+\begin{itemize}
+\item Designed and implemented integrated systems combining ML models with physical robotics for advanced fluid delivery.
+\item Developed computer vision systems for process monitoring and quality control in manufacturing environments.
+\item Built responsive React UI with Python Flask backend for ML-enhanced system monitoring and control.
+\item Created data acquisition and analysis tooling with JupyterLab for model training and evaluation.
+\item Implemented IoT sensor integration using I2C and SPI protocols, generating data streams for ML processing.
+\end{itemize}
+
+\jobentry{(March 2021 -- March 2022)}{Data \& ML Engineer -- \textit{Owl Labs}}
+\begin{itemize}
+\item Developed data acquisition and analysis systems for thermal, acoustic, and performance metrics.
+\item Created visualization tools for complex multidimensional datasets using Python, NumPy, and Matplotlib.
+\item Built predictive models for product performance optimization using statistical methods.
+\item Supported embedded Linux and Android systems, integrating with ML-based features.
+\item Collaborated with hardware teams to design data collection infrastructure for ML-driven insights.
+\end{itemize}
+
+\jobentry{(August 2020 -- March 2021)}{Software Engineer -- \textit{Degree Controls Systems}}
+\begin{itemize}
+\item Designed and implemented data-driven applications with Python and PyQT5 GUI framework.
+\item Created analysis tools for systems optimization and performance monitoring.
+\item Developed automated testing systems using statistical methods for validation.
+\item Managed engineering change processes across hardware and software domains.
+\end{itemize}
+
+\jobentry{(August 2018 -- August 2020)}{IoT \& Data Systems Developer -- \textit{Sartorius NA}}
+\begin{itemize}
+\item Architected and built custom IoT automation framework in Python, generating over \$50,000 in recovered value.
+\item Developed predictive analytics for production systems using collected sensor data.
+\item Created microcontroller-based data collection network reporting via socket server.
+\item Built dynamic dashboard systems for real-time operational intelligence.
+\item Implemented automated KPI tracking and analysis systems.
+\end{itemize}
+
+\section*{Leadership \& Research}
+\begin{itemize}
+\item \textbf{Project Manager \& Software Lead} for NEU Robotics Quadruped Project, coordinating 75+ engineering students.
+\item Led AI integration for autonomous navigation systems using ROS (Robot Operating System).
+\item Implemented Computer Vision and SLAM (Simultaneous Localization and Mapping) systems.
+\item Developed Inverse Kinematics algorithms for quadruped movement optimization.
+\item Applied machine learning techniques to improve locomotion efficiency and terrain adaptation.
+\end{itemize}
+
+\end{document}
