@@ -1,0 +1,3 @@
+I specialize in mission-critical C++ development for real-time, Linux-based robotic systems, delivering clean, well-tested, and production-deployed code to autonomous systems. In my 7 years of industry engineering experience, I have actively contributed to the development of quadrupedal (legged) robotics (ROS/C++/Python), thousands of differential drive autonomous vehicles for warehouse automation/micro-fulfillment, and large-format additive manufacturing systems for gantry-based concrete 3D printing of large structures.
+
+I am extremely excited by the Reframe vision and look forward to learning more soon!
