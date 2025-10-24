@@ -84,20 +84,41 @@ Class of 2025, GPA 3.7
 \item Substantial technical contribution to the development of CAPSTAN servo reduction mechanisms, ROS (Robot Operating System), Simultaneous Localization and Mapping, Computer Vision, Inverse kinematics and more.
 \end{itemize}
 \section*{Practical Experience}
-\jobentry{(September 2022 -- Current)}{Software Engineer II - \textit{Walmart Advanced Systems \& Robotics}  $\rightarrow$  \textit{Symbotic}}
+\jobentry{(June 2025 -- Current)}{Senior Embedded Software Engineer (Tech Lead) -- \textit{SIMPL Automation}}
+\begin{itemize}
+  \item Proposed, architected, and implemented a highly modular C++ (real-time Linux based) application to support a portfolio of high-powered industrial robotics systems ranging from vertical lift modules (VLMs), load handling devices (LHDs), and autonomous ground vehicles (AGVs).
+\item \textit{Developed:}
+  \begin{itemize}
+    \item Hierarchical state machines: Ported existing state logic from Zephyr RTOS to Linux using BOOST:SML.
+    \item Control Systems: Robust, synchronous and real-time (PREEMPT\_RT) control loops at 1KHz.
+    \item Localization Algorithms: Trapezoidal trajectory generation with slip/skid, IMU and fiducial recomputation.
+    \item Device drivers: CAN bus driver, IMU driver, COGNEX computer vision driver, GPIO driver and more.
+    \item Simulation: Prior to hardware integration, implemented simulation of all systems with mocked drivers.
+  \end{itemize}
+
+\item \textit{Technical Leadership:}
+  \begin{itemize}
+  \item Mentored 2 junior embedded engineers, establishing software architecture and embedded best practices.
+  \item Led architecture reviews, design decisions, and code reviews across the embedded software stack.
+  \end{itemize}
+\item Develop, maintain and improve legacy systems (Zephyr RTOS). (130+ active robots deployed in the field)
+\item Contribute to safety-critical features including fault detection and telemetry (MQTT).
+\item Improved embedded toolchain, build system, and CI/CD pipelines.
+\end{itemize}
+\jobentry{(September 2022 -- June 2025)}{Software Engineer II - \textit{Walmart Advanced Systems \& Robotics}  $\rightarrow$  \textit{Symbotic}}
 \begin{itemize}
 \item R\&D/Sustaining of differential-drive mobile robots in a production environment. (1500+ units, 1.9M moves/week)
 \item Implemented 112+ feature stories, fixed 66+ bugs, facilitated testing in a cross-functional research lab.
   \begin{itemize}
-  \item Reduced the \#1 failure mode in production by 92.5\% (a reduction of 600 sev-1 failures/month and 750k\$ losses).  
+  \item Reduced key failure modes in production by 92.5\% (reduction of 600 fatal failures/month and 750k\$ losses).
   \end{itemize}
-\item Developed:
+\item \textit{Developed:}
   \begin{itemize}
-  \item Command subsystems for Trajectory Generation and Multi Input Multi Output (MIMO) Drive Motor Control. 
+  \item Command subsystems for Trajectory Generation and Multi Input Multi Output (MIMO) Drive Motor Control.
   \item Core infrastructure with modern C++17 in a realtime QNX microkernel environment. Ported to linux in V2.
-  \item Platform level device drivers for mission critical localization sensors. IMU, Hall Effect, Laser. 
-  \item Hierarchical state machines via a proprietary, event driven framework for multi-axis robotic orchestration. 
-  \item Improved mobile robot navigation, localization and control algorithms to optimize for production performance. 
+  \item Platform level device drivers for mission critical localization sensors. IMU, Hall Effect, Laser.
+  \item Hierarchical state machines via a proprietary, event driven framework for multi-axis robotic orchestration.
+  \item Improved mobile robot navigation, localization and control algorithms to optimize for production performance.
   \end{itemize}
 \item Containerized the embedded development toolchain with Docker. Cross-compilation for 4 CPU architectures.
 \item Implemented ETL data pipelines and deployed to a cloud environment (Azure), modernizing our observability stack.
